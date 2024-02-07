@@ -3,11 +3,11 @@ $config = array();
 $config['name'] = "Tawk.to";
 $config['author'] = "Microweber";
 $config['no_cache'] = false;
-$config['ui'] = true;
+$config['ui'] = false;
 $config['ui_admin'] = true;
 $config['categories'] = "miscellaneous";
 $config['position'] = 39;
-$config['version'] = 1.2;
+$config['version'] = 1.0;
 
 $config['settings'] = [];
 $config['settings']['autoload_namespace'] = [

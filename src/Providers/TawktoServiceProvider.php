@@ -5,7 +5,7 @@ namespace MicroweberPackages\Modules\Tawkto\Providers;
 use Illuminate\Support\Facades\View;
 use Livewire\Livewire;
 use MicroweberPackages\Module\Facades\ModuleAdmin;
-use MicroweberPackages\Modules\Calendly\Http\Livewire\TawktoSettingsComponent;
+use MicroweberPackages\Modules\Tawkto\Http\Livewire\TawktoSettingsComponent;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
