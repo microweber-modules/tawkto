@@ -14,7 +14,10 @@
 
         <div class="card mt-4">
             <div class="card-body mb-4">
-
+                <div>
+                    <small class="live-edit-label"><?php _e("Direct Chat Link"); ?></small>
+                    <livewire:microweber-option::text optionKey="direct_chat_link" optionGroup="tawkto" module="tawkto"  />
+                </div>
             </div>
         </div>
 
