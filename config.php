@@ -10,6 +10,9 @@ $config['position'] = 39;
 $config['version'] = 1.0;
 
 $config['settings'] = [];
+
+$config['settings']['routes']['admin'] = 'admin.tawkto.index';
+
 $config['settings']['autoload_namespace'] = [
     [
         'path' => __DIR__ . '/src/',

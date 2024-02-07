@@ -5,6 +5,7 @@ namespace MicroweberPackages\Modules\Tawkto\Providers;
 use Illuminate\Support\Facades\View;
 use Livewire\Livewire;
 use MicroweberPackages\Module\Facades\ModuleAdmin;
+use MicroweberPackages\Modules\Tawkto\Http\Livewire\Admin\AdminTawktoComponent;
 use MicroweberPackages\Modules\Tawkto\Http\Livewire\TawktoSettingsComponent;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
@@ -16,6 +17,8 @@ class TawktoServiceProvider extends PackageServiceProvider
     {
         $package->name('microweber-module-tawkto');
         $package->hasViews('microweber-module-tawkto');
+
+        $package->hasRoute('admin');
     }
 
 
@@ -23,8 +26,12 @@ class TawktoServiceProvider extends PackageServiceProvider
     {
         parent::register();
 
-        Livewire::component('microweber-module-tawkto::settings', TawktoSettingsComponent::class);
-        ModuleAdmin::registerSettings('tawkto', 'microweber-module-tawkto::settings');
+        $this->loadRoutesFrom(__DIR__ . '/../routes/admin.php');
+
+        Livewire::component('microweber-module-tawkto::admin-tawkto', AdminTawktoComponent::class);
+
+       // Livewire::component('microweber-module-tawkto::settings', TawktoSettingsComponent::class);
+        //ModuleAdmin::registerSettings('tawkto', 'microweber-module-tawkto::settings');
 
     }
 }
