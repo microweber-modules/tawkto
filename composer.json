@@ -1,0 +1,17 @@
+{
+  "name": "microweber-modules/tawkto",
+  "description": "Tawk.to",
+  "license": "MIT",
+  "homepage": "https://microweber.org/modules/microweber-modules/tawkto",
+  "authors": [
+    {
+      "name": "Bozhidar Slaveykov",
+      "email": "bobi@microweber.com"
+    }
+  ],
+  "keywords": [
+    "tawk.to"
+  ],
+  "type": "microweber-module",
+  "target-dir": "tawkto"
+}
