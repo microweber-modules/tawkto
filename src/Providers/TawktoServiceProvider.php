@@ -30,8 +30,6 @@ class TawktoServiceProvider extends PackageServiceProvider
 
         Livewire::component('microweber-module-tawkto::admin-tawkto', AdminTawktoComponent::class);
 
-       // Livewire::component('microweber-module-tawkto::settings', TawktoSettingsComponent::class);
-        //ModuleAdmin::registerSettings('tawkto', 'microweber-module-tawkto::settings');
 
     }
 }

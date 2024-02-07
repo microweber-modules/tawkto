@@ -8,7 +8,7 @@ event_bind('mw.front', function () {
 
         $parseDirectChatLink = str_replace("http://tawk.to/chat/","", $directChatLink);
         $parseDirectChatLink = str_replace("https://tawk.to/chat/","", $parseDirectChatLink);
-        
+
         if (!empty($parseDirectChatLink)) {
             mw()->template->foot("
 
