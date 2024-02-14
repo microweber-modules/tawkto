@@ -7,7 +7,7 @@ $config['ui'] = false;
 $config['ui_admin'] = true;
 $config['categories'] = "miscellaneous";
 $config['position'] = 39;
-$config['version'] = 1.0;
+$config['version'] = 1.1;
 
 $config['settings'] = [];
 
