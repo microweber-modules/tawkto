@@ -18,6 +18,10 @@
                     <small class="live-edit-label"><?php _e("Direct Chat Link"); ?></small>
                     <livewire:microweber-option::text optionKey="direct_chat_link" optionGroup="tawkto" module="tawkto"  />
                 </div>
+                <div>
+                    <small class="live-edit-label"><?php _e("Javascript Api Key"); ?></small>
+                    <livewire:microweber-option::text optionKey="javascript_api_key" optionGroup="tawkto" module="tawkto"  />
+                </div>
             </div>
         </div>
 
